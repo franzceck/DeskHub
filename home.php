@@ -291,28 +291,50 @@ summary:after {
             width: 100%;
             margin-top: 5%;
             align-items: center;
+            
         }
         .style{
             display: flex;
             flex-direction: column;
-            background-color: #FFFFFF;
+            background-color: #FFE8C0;
             justify-content: center;
-            width: 50%;
+            width: 100%;
             padding: 3rem;
-            border-radius: 2px;
+            border-radius: 10px;
             box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
                         0 10px 10px rgba(0,0,0,0.22);
-        
-
         }
+        .contact-btn {
+          background-color: #FDC474;
+          border-width: 0px;
+          padding: 10px;
+          margin-left:-15px;
+          width: 48rem;
+          font-weight: bold;
+          
+        }
+        .contact-btn:hover {
+          background-color: #FF914D;
+          color: black;
+        }
+        .contact-us-title {
+          color: black;
+        }
+
+        .seperator.contact-separator {
+          background-color: #FDC474;
+          width: 14rem;
+        }
+
     </style>
 </head>
 <hr>
 <body>
     <div id="contact" class="faq-body">
             <div class="faq-header">
-                <h3 class="faq-title">Contact Us</h3>
-                <div class="seperator"></div>
+            
+                <h3 class="faq-title contact-us-title"></i>Contact Us</h3>
+                <div class="seperator contact-separator"></div>
             </div>
     <form action="https://formspree.io/f/xvonzjja" " method="POST">
         <div class="center">
@@ -336,7 +358,7 @@ summary:after {
                 <textarea class="form-control" name="Comments" id="exampleFormControlTextarea1" rows="3" required></textarea>
             </div>
             <div class="col-12">
-                <button class="btn btn-primary" name="FormSubmit" type="submit">Submit</button>
+                <button class="btn btn-primary contact-btn" name="FormSubmit" type="submit">Submit</button>
             </div>
         </div>      
         </div>
