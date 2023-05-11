@@ -59,11 +59,70 @@
   })
 </script>
 <!-- Footer-->
+<style>
+  .Footnew{
+    display: flex;
+    flex-direction: row;
+  }
+  .follow{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+  }
+  .follow ul li:hover{
+    text-decoration: underline;
+    color: #007bff;
+  }
+  .follow ul{
+    margin: 0 100px 0 70px;
+    list-style: none;
+  }
+</style>
 <footer class="py-5 bg-dark">
-            <div class="container">
-              <p class="m-0 text-center text-white">Copyright &copy; <?php echo $_settings->info('short_name') ?> 2023</p>
-              <p class="m-0 text-center text-white">Developed By: <a href="ma.nicafranzceckronsuarez@student.laverdad.edu.ph">franzceck</a></p>
+          <div class="container Footnew">
+             <div>
+                <p class="m-0  text-white">Copyright &copy; <?php echo $_settings->info('short_name') ?> 2023</p>
+                <p class="m-0 text-white">Developed By: <a href="">Group 1</a></p>
+             </div>
+
+              <div class="follow">
+                            <ul>
+                                <li class="last">  Follow Us</li>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img src=".//socials/facebook.png" alt=""/>Facebook</a>
+                              </li>
+                              <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src=".//socials/instagram.png" alt=""/>Instagram</a>
+                              </li>
+                              <li>
+                                <a href="https://twitter.com/" target="_blank">
+                                    <img src=".//socials/twitter.png" alt=""/>Twitter</a>
+                              </li>
+                              <li>
+                                <a href="https://www.youtube.com/" target="_blank">
+                                    <img src=".//socials/youtube.png" alt=""/>Youtube</a>
+                              </li>
+                            </ul>
+
+                            <ul>
+                              <li>About Us</li>
+                              <li>Adress</li>
+                              <li>Email</li>
+                              
+                            </ul>
+
+                            <ul>
+                             
+                              <li>Contact Us</li>
+                              <li>Privacy Policy</li>
+                              <li>FAQ</li>
+                            </ul>
+                            
+                        </div>      
           </div>
+        
         </footer>
 
    

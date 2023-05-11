@@ -2,15 +2,17 @@
   .collapse{
     margin-left: 700px;
   }
-  .butss{
+   .navbar-light .navbar-nav .butss .nav-link {
     border: none;
     background-color: white;
-    color: rgba(0, 0, 0, 0.55);
+    color: #B67A0E;
     font-size: larger;
     font-weight: 700;
+    margin-right: 10px;
+
   }
-  .butss:hover{
-    color: #da70d6;
+  .navbar-light .navbar-nav .butss .nav-link:hover{
+    color: #FDC474;
   }
 </style>
 
@@ -22,11 +24,11 @@
                 <?php echo $_settings->info('short_name') ?>
                 </a>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse nav-top" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                         <li class="butss nav-item"><a class="nav-link" aria-current="page" href="./">Home</a></li>
                         <li class="butss nav-item"><a class="nav-link" aria-current="page" href="#faq">Support</a></li>
-                        <li class="butss nav-item"><a class="nav-link" aria-current="page" href="#contact">Contact Us</a></li>
+                        <li class="butss nav-item"><a class="nav-link" aria-current="page" href="#contact">Contact</a></li>
                         <li class="butss nav-item"><a class="nav-link" aria-current="page" href="./user" href="user/register.php">Login</a></li>
                      
                          
