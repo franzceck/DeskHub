@@ -141,7 +141,7 @@
         </button>
       </div>
       <div class="modal-body">
-      <section class="py-5">    
+      <section >    
         <?php include('about.html') ?>    
     </section>
       </div>
