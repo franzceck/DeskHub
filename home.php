@@ -18,13 +18,6 @@
 $sched_arr = array();
 $max = 0;
 ?>
-<section class="py-5">
-    <div class="container px-4 px-lg-5 mt-5">
-
-    <?php include('about.html') ?>
-
-    </div>
-</section>
 
 <div class="faqs">
 <!DOCTYPE html>

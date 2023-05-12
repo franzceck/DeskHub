@@ -77,6 +77,18 @@
     margin: 0 100px 0 70px;
     list-style: none;
   }
+  .follow ul .Override{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  .follow ul .Override:hover{
+    text-decoration: underline;
+    color: #007bff;
+  }
 </style>
 <footer class="py-5 bg-dark">
           <div class="container Footnew">
@@ -116,7 +128,29 @@
                             <ul>
                              
                               <li>Contact Us</li>
-                              <li>Privacy Policy</li>
+                              <li><!-- Button trigger modal -->
+<button type="button" class="Override"  data-toggle="modal" data-target="#example">
+  Policy Disclamer
+</button>
+<div class="modal " id="example" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <section class="py-5">    
+        <?php include('about.html') ?>    
+    </section>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></li>
                               <li>FAQ</li>
                             </ul>
                             
