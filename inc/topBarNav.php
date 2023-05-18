@@ -1,6 +1,6 @@
 <style>
   .collapse{
-    margin-left: 700px;
+    margin-left: 500px;
   }
    .navbar-light .navbar-nav .butss .nav-link {
     border: none;

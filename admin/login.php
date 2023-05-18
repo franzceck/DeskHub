@@ -17,7 +17,8 @@
     }
     .form-control{
       border: none;
-      border-bottom: 1px solid #da70d6;
+      border-bottom: 1px solid #FDC474;
+  
     }  
     .col-12 {
       margin-top: 20px;
@@ -40,7 +41,7 @@
       <p class="login-box-msg">Welcome!</p>
 
       <form id="login-frm" action="" method="post">
-      <span style="font-size:10px; color: #03989e;">USERNAME</span>
+      <span style="font-size:10px; color: #FDC474;">USERNAME</span>
         <div class="input-group mb-3">
           <input type="text" class="form-control" autofocus name="username" placeholder="">
           <div class="input-group-append">
@@ -49,7 +50,7 @@
             </div>
           </div>
         </div>
-        <span style="font-size:10px; color: #03989e;">PASSWORD</span>
+        <span style="font-size:10px; color: #FDC474;">PASSWORD</span>
         <div class="input-group mb-3" >
           <input type="password" class="form-control" name="password" placeholder="">
           <div class="input-group-append">
