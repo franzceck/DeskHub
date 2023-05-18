@@ -87,7 +87,7 @@
   }
   .follow ul .Override:hover{
     text-decoration: underline;
-    color: #007bff;
+    color: #FDC474;
   }
 </style>
 <footer class="py-5 bg-dark">
@@ -130,7 +130,7 @@
                               <li>Contact Us</li>
                               <li><!-- Button trigger modal -->
 <button type="button" class="Override"  data-toggle="modal" data-target="#example">
-  Policy Disclamer
+  Privacy Disclaimer
 </button>
 <div class="modal " id="example" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
