@@ -58,11 +58,15 @@
     }
   })
 </script>
-<!-- Footer-->
+<!-- HOMEPAGE Footer-->
 <footer class="py-5 bg-dark">
-            <div class="container">
+            <div class="container" >
               <p class="m-0 text-center text-white">Copyright &copy; <?php echo $_settings->info('short_name') ?> 2023</p>
               <p class="m-0 text-center text-white">Developed By: <a href="ma.nicafranzceckronsuarez@student.laverdad.edu.ph">franzceck</a></p>
+
+              <p class="m-0 text-center text-white"> <a href="about.html">Privacy Disclaimer</a></p>
+            
+
           </div>
         </footer>
 

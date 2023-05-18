@@ -18,13 +18,13 @@
 $sched_arr = array();
 $max = 0;
 ?>
-<section class="py-5">
+<!-- <section class="py-5">
     <div class="container px-4 px-lg-5 mt-5">
 
     <?php include('about.html') ?>
 
     </div>
-</section>
+</section> -->
 
 <div class="faqs">
 <!DOCTYPE html>
@@ -305,7 +305,7 @@ summary:after {
                         0 10px 10px rgba(0,0,0,0.22);
         }
         .contact-btn {
-          background-color: #FDC474;
+          background-image: linear-gradient(to right,  #FFDE59 27%, #FF914D 100%);
           border-width: 0px;
           padding: 10px;
           margin-left:-15px;
@@ -314,7 +314,7 @@ summary:after {
           
         }
         .contact-btn:hover {
-          background-color: #FF914D;
+          background-image: linear-gradient(to right, #FF914D 27%, #FFDE59 100% );
           color: black;
         }
         .contact-us-title {
@@ -336,7 +336,7 @@ summary:after {
                 <h3 class="faq-title contact-us-title"></i>Contact Us</h3>
                 <div class="seperator contact-separator"></div>
             </div>
-    <form action="https://formspree.io/f/xvonzjja" " method="POST">
+    <form action="https://formspree.io/f/xvonzjja"  method="POST">
         <div class="center">
         <div class="style">
             <div class="row">

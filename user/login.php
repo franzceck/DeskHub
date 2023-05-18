@@ -6,9 +6,10 @@
 <head>
   <style>
     body {
-      background-image: url('../dist/img/Back.png');
+      /* background-image: url('../dist/img/Back.png'); */
       background-size: cover;
       background-position: center;
+      
     }
 
     .center-box {
@@ -16,17 +17,21 @@
         0 10px 10px rgba(0, 0, 0, 0.22);
       height: 550px;
       width: 400px;
+      background-color: #FFE8C0;
     }
 
     .form-control {
       border: none;
       border-bottom: 1px solid #da70d6;
+      
     }
 
     .col-12 {
       margin-top: 20px;
       margin-bottom: 20px;
+      
     }
+    
   </style>
 </head>
 
@@ -38,25 +43,27 @@
     <!-- /.login-logo -->
     <div class="card card-outline card-primary center-box">
       <div class="card-header text-center">
-        <a href="./" class="h1"><b>Login</b></a>
+        <p href="" class="h1" style="font-size:30px;"><b>Login</b></p>
       </div>
-      <img src="../dist/img/Logo (1).png" alt="" srcset="" style="height: 70px; width:70px; margin-left: 40%; ">
+      <img src="../dist/img/Deskhub (new logo).png" alt="" srcset="" style="height: 70px; width:70px; margin-left: 40%; ">
       <div class="card-body">
         <p class="login-box-msg">Welcome!</p>
 
         <form id="login-frm" action="" method="post">
-          <span style="font-size:10px; color: #03989e;">EMAIL</span>
+          <!-- <span style="font-size:10px; color: #03989e;">EMAIL</span> -->
           <div class="input-group mb-3">
-            <input type="text" class="form-control" autofocus name="email" placeholder="">
+            <input type="text" class="form-control" autofocus name="email" placeholder="Email"
+            style="font-size:15px; color: black;">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-user"></span>
               </div>
             </div>
           </div>
-          <span style="font-size:10px; color: #03989e;">PASSWORD</span>
+          <!-- <span style="font-size:10px; color: #03989e;">PASSWORD</span> -->
           <div class="input-group mb-3">
-            <input type="password" class="form-control" name="password" placeholder="">
+            <input type="password" class="form-control" name="password" placeholder="Password"
+            style="font-size:15px; color: black;">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-lock"></span>
@@ -67,12 +74,12 @@
 
             <!-- /.col -->
             <div class="col-12">
-              <button style="background-color: #da70d6;" type="submit" class="btn btn-primary btn-block">Sign In</button>
+              <button style="font-weight:bold; background-image: linear-gradient(to right,  #FFDE59 27%, #FF914D 100%)" type="submit" class="btn btn-primary btn-block">Sign In</button>
             </div>
             <!-- /.col -->
           </div>
           <p class="login-box-msg">Don't have an account yet? <a href="register.php">Register</a></p>
-          <div class="col-8">
+          <div class="col-8 ">
             <a href="<?php echo base_url ?>">Go to Homepage</a>
           </div>
         </form>

@@ -3,13 +3,16 @@
 <html lang="en" class="" style="height: auto;">
 <?php require_once('inc/header.php') ?>
 
+
 <head>
+  
   <style>
     body {
-      background-image: url('../dist/img/Back.png');
+      /* background-image: url('../dist/img/Back.png'); */
       background-size: cover;
       background-position: center;
       height: unset !important;
+      background-color: red;
     }
 
     .center-box {
@@ -17,11 +20,14 @@
         0 10px 10px rgba(0, 0, 0, 0.22);
       /* height: 550px; */
       width: 400px;
+      background-color: #FFE8C0;
+      
     }
 
     .form-control {
       border: none;
       border-bottom: 1px solid #da70d6;
+      
     }
 
     .col-12 {
@@ -32,10 +38,17 @@
     .login-box {
       margin: 20px 0px;
     }
+
+    .card-header .text-center {
+      font-size: 5px;
+    }
   </style>
 </head>
 
 <body class="hold-transition login-page  light-mode">
+
+
+
   <script>
     start_loader()
   </script>
@@ -43,50 +56,50 @@
     <!-- /.login-logo -->
     <div class="card card-outline card-primary center-box">
       <div class="card-header text-center">
-        <a href="./" class="h1"><b>Register</b></a>
+        <p href="" class="h1" style="font-size:30px;"><b>Register</b></p>
       </div>
-      <img src="../dist/img/Logo (1).png" alt="" srcset="" style="height: 70px; width:70px; margin-left: 40%; ">
+      <img src="../dist/img/Deskhub (new logo).png" alt="" srcset="" style="height: 70px; width:70px; margin-left: 40%; ">
       <div class="card-body">
-        <p class="login-box-msg">Welcome!</p>
+        <!-- <p class="login-box-msg">Welcome!</p> -->
 
         <form id="register-user-frm" action="" method="post">
-          <span style="font-size:10px; color: #03989e;">FIRST NAME</span>
+          <!-- <span style="font-size:10px; color: #03989e;">FIRST NAME</span> -->
           <div class="input-group mb-3">
-            <input type="text" class="form-control" autofocus name="firstname" placeholder="" required>
+            <input type="text" class="form-control" autofocus name="firstname" placeholder="First Name" required>
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-user"></span>
               </div>
             </div>
           </div>
-          <span style="font-size:10px; color: #03989e;">LAST NAME</span>
+          <!-- <span style="font-size:10px; color: #03989e;">LAST NAME</span> -->
           <div class="input-group mb-3">
-            <input type="text" class="form-control" autofocus name="lastname" placeholder="" required>
+            <input type="text" class="form-control" autofocus name="lastname" placeholder="Last Name" required>
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-user"></span>
               </div>
             </div>
           </div>
-          <span style="font-size:10px; color: #03989e;">EMAIL</span>
+          <!-- <span style="font-size:10px; color: #03989e;">EMAIL</span> -->
           <div class="input-group mb-3">
-            <input type="text" class="form-control" autofocus name="email" placeholder="" required>
+            <input type="text" class="form-control" autofocus name="email" placeholder="Email" required>
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-user"></span>
               </div>
             </div>
           </div>
-          <span style="font-size:10px; color: #03989e;">PASSWORD</span>
+          <!-- <span style="font-size:10px; color: #03989e;">PASSWORD</span> -->
           <div class="input-group mb-3">
-            <input type="password" class="form-control" name="password" placeholder="" required>
+            <input type="password" class="form-control" name="password" placeholder="Password" required>
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-lock"></span>
               </div>
             </div>
           </div>
-          <span style="font-size:10px; color: #03989e;">CONTACT NO.</span>
+          <!-- <span style="font-size:10px; color: #03989e;">CONTACT NO.</span>
           <div class="input-group mb-3">
             <input type="text" class="form-control" name="contact" placeholder="" required>
             <div class="input-group-append">
@@ -94,8 +107,8 @@
                 <span class="fas fa-user"></span>
               </div>
             </div>
-          </div>
-          <span style="font-size:10px; color: #03989e;">ADDRESS</span>
+          </div> -->
+          <!-- <span style="font-size:10px; color: #03989e;">ADDRESS</span>
           <div class="input-group mb-3">
             <input type="text" class="form-control" name="address" placeholder="" required>
             <div class="input-group-append">
@@ -103,12 +116,12 @@
                 <span class="fas fa-user"></span>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="row">
 
             <!-- /.col -->
             <div class="col-12">
-              <button style="background-color: #da70d6;" type="submit" class="btn btn-primary btn-block">Register</button>
+              <button style="font-weight:bold; background-image: linear-gradient(to right,  #FFDE59 27%, #FF914D 100%)" type="submit" class="btn btn-primary btn-block">Register</button>
             </div>
             <!-- /.col -->
           </div>
@@ -141,6 +154,10 @@
       end_loader();
     })
   </script>
+
+      
+
+  
 </body>
 
 </html>

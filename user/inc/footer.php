@@ -59,7 +59,7 @@
         <strong>Copyright © <?php echo date('Y') ?>. 
         <!-- <a href=""></a> -->
         </strong>
-        All rights reserved.
+        All rights reserved. 
         <div class="float-right d-none d-sm-inline-block">
           <b><?php echo $_settings->info('short_name') ?> (by: <a href="ma.nicafranzceckronsuarez@student.laverdad.edu.ph" target="blank">franzceck3</a> )</b> v1.0
         </div>

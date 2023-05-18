@@ -9,11 +9,11 @@ $meta = array_column($qry->fetch_all(MYSQLI_ASSOC),'meta_value','meta_field');
 ?>
 
 <div class="col-lg-12">
-	<div class="card card-outline card-primary">
-		<div class="card-header">
-			<h5 class="card-title">DeskHub Settings</h5>
+	<div class="card card-outline card-primary " >
+		<div class="card-header ">
+			<h5 class="card-title ">DeskHub Settings</h5>
 		</div>
-		<div class="card-body">
+		<div class="card-body ">
 			<form action="" id="schedule_settings">
 				<div id="msg" class="form-group"></div>
                 <div class="row">
@@ -81,6 +81,14 @@ $meta = array_column($qry->fetch_all(MYSQLI_ASSOC),'meta_value','meta_field');
                             <input type="time" class="form-control col" name="afternoon_schedule[]" value="<?php echo isset($meta['afternoon_schedule']) ? explode(',',$meta['afternoon_schedule'])[1] : "" ?>" required>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <label for="" class="control-label">Maximum Bookings Per Day</label>
+                        <div class="row row-cols-3">
+                            <input placeholder="15" type="number" name="max_bookings_per_day" class="form-control col" required/>
+                        </div>
+                    </div>
+
+                    
                 </div>
                 </div>
 			</form>

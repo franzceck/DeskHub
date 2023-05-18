@@ -29,6 +29,7 @@ $roles = $result->fetch_all(MYSQLI_ASSOC);
 					<label for="lastname">Last Name</label>
 					<input type="text" name="lastname" id="lastname" class="form-control" value="<?php echo isset($meta['lastname']) ? $meta['lastname']: '' ?>" required>
 				</div>
+
 				<div class="form-group col-6">
 					<label for="role_id">Role</label>
 					<select name='role_id' id='role_id' class="form-control">
