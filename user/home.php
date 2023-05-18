@@ -24,7 +24,7 @@ require_once('inc/sess_auth.php');
     .fc-event:hover,
     .fc-event-selected {
         color: black !important;
-        background: var(--light);
+        background: #FDC474;
         cursor: pointer;
     }
 
