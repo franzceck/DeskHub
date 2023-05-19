@@ -69,13 +69,13 @@ p {
 
 div.seperator {
   width: 7.5em;
-  background-color: #1b1b1b;
+  background-color: #FDC474;
   height: 0.17em;
   margin-left: -1.8em;
 }
 
 .faq-list > div {
-  border-bottom: 0.07em solid #1b1b1b;
+  border-bottom: 0.07em solid #FDC474;
   padding: 1.5em 0em;
 }
 
@@ -104,7 +104,7 @@ summary {
 }
 
 summary:hover {
-  color: #226acc;
+  color: #FDC474;
 }
 
 details[open] summary ~ * {
@@ -123,11 +123,11 @@ details[open] summary ~ * {
 }
 
 details[open] summary {
-  color: #226acc;
+  color: #FDC474;
 }
 
 details[open] p {
-  border-left: 3px solid #226acc;
+  border-left: 3px solid #FDC474;
   margin-left: 55px;
   padding-left: 25px;
   opacity: 100;
@@ -292,7 +292,8 @@ summary:after {
             display: flex;
             justify-content: center;
             width: 100%;
-            margin-top: 5%;
+            margin-top: 15%;
+            margin-left: 10%;
             align-items: center;
             
         }
@@ -336,7 +337,7 @@ summary:after {
     <div id="contact" class="faq-body">
             <div class="faq-header">
             
-                <h3 class="faq-title contact-us-title"></i>Contact Us</h3>
+                <h3 class="contact-us-title"></i>Contact Us</h3>
                 <div class="seperator contact-separator"></div>
             </div>
     <form action="https://formspree.io/f/xvonzjja"  method="POST">

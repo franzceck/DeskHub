@@ -24,7 +24,7 @@
   position: relative;
   /* margin-top: 120px; */
   left: 200px;
-  color: #226acc;
+  color: #FDC474;
   font-family: "Red Hat Display";
   font-size: 20px;
   width: 650px;
@@ -47,13 +47,13 @@ p {
 
 div.seperator {
   width: 7.5em;
-  background-color: #1b1b1b;
+  background-color: #FDC474;
   height: 0.17em;
   margin-left: -1.8em;
 }
 
 .faq-list > div {
-  border-bottom: 0.07em solid #226acc;
+  border-bottom: 0.07em solid #FDC474;
   padding: 1.5em 0em;
 }
 
@@ -82,7 +82,7 @@ summary {
 }
 
 summary:hover {
-  color: #226acc;
+  color: #FDC474;
 }
 
 details[open] summary ~ * {
@@ -101,11 +101,11 @@ details[open] summary ~ * {
 }
 
 details[open] summary {
-  color: #226acc;
+  color: #FDC474;
 }
 
 details[open] p {
-  border-left: 3px solid #226acc;
+  border-left: 3px solid #FDC474;
   margin-left: 55px;
   padding-left: 25px;
   opacity: 100;
