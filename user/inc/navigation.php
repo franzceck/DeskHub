@@ -3,7 +3,7 @@
       <aside class="main-sidebar sidebar-light-primary elevation-4 sidebar-no-expand">
         <!-- Brand Logo -->
         <a href="<?php echo base_url ?>user" style="background-color: #FFE8C0" class="brand-link text-sm">
-        <img src="<?php echo validate_image($_settings->info('logo'))?>" alt="Store Logo" class="brand-image  elevation-3" style="opacity: .8;width: 2.5rem;height: 3rem;max-height: unset">
+        <img src="<?php echo validate_image($_settings->info('logo'))?>" alt="Store Logo" class="brand-image  elevation-3" style="opacity: .8;width: 3rem;height: 3.5rem;max-height: unset">
         <span class="brand-text font-weight-bolder"><?php echo $_settings->info('short_name') ?></span>
         </a>
         <!-- Sidebar -->
@@ -26,7 +26,7 @@
                     <li class="nav-item dropdown">
                       <a href="./" class="nav-link nav-home"  >
                         <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p style="font-size: 20px; font-weight:600;">
+                        <p style="font-size: 20px; font-weight:600;color: #B67A0E;">
                             Dashboard
                         </p>
                       </a>
@@ -34,7 +34,7 @@
                     <li class="nav-item dropdown">
                       <a href="./?page=appointments" class="nav-link nav-appointments">
                         <i class="nav-icon fas fa-calendar"></i>
-                        <p style="font-size: 20px; font-weight:600;">
+                        <p style="font-size: 20px; font-weight:600;color: #B67A0E;">
                           List of Bookings
                         </p>
                       </a>
@@ -45,7 +45,7 @@
                         <li class="nav-item dropdown">
                           <a href="./?page=schedule_settings" class="nav-link nav-schedule_settings">
                             <i class="nav-icon fas fa-calendar-day"></i>
-                            <p style="font-size: 20px;  font-weight:600;">
+                            <p style="font-size: 20px;  font-weight:600;color: #B67A0E;">
                               Booking Settings
                             </p>
                           </a>
@@ -53,7 +53,7 @@
                         <li class="nav-item dropdown">
                           <a href="./?page=user/list" class="nav-link nav-user_list">
                             <i class="nav-icon fas fa-users"></i>
-                            <p style="font-size: 20px; font-weight:600;">
+                            <p style="font-size: 20px; font-weight:600;color: #B67A0E;">
                               User List
                             </p>
                           </a>
@@ -61,7 +61,7 @@
                         <li class="nav-item dropdown">
                           <a href="./?page=system_info" class="nav-link nav-system_info">
                             <i class="nav-icon fas fa-cogs"></i>
-                            <p style="font-size: 20px;  font-weight:600;">
+                            <p style="font-size: 20px;  font-weight:600;color: #B67A0E;">
                               Settings
                             </p>
                           </a>
@@ -69,16 +69,16 @@
                     <?php } ?>
                     <li class="nav-item dropdown">
                       <a href="./?page=user/FloorPlan" class="nav-link nav-user_FloorPlan">
-                        <i class="nav-icon fas fa-users"></i>
-                        <p style="font-size: 20px; font-weight:600;">
+                        <i class="nav-icon fas fa-map"></i>
+                        <p style="font-size: 20px; font-weight:600;color: #B67A0E;">
                           Floor Plan
                         </p>
                       </a>
                     </li>
                     <li class="nav-item dropdown">
                       <a href="./?page=user/Support" class="nav-link nav-user_support">
-                        <i class="nav-icon fas fa-users"></i>
-                        <p style="font-size: 20px; font-weight:600;">
+                        <i class="nav-icon fas fa-info"></i>
+                        <p style="font-size: 20px; font-weight:600;color: #B67A0E;">
                           Support
                         </p>
                       </a>
