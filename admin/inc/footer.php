@@ -61,7 +61,7 @@
         </strong>
         All rights reserved.
         <div class="float-right d-none d-sm-inline-block">
-          <b><?php echo $_settings->info('short_name') ?> (by: <a href="ma.nicafranzceckronsuarez@student.laverdad.edu.ph" target="blank">franzceck3</a> )</b> v1.0
+          <b><?php echo $_settings->info('short_name') ?> (by: <a href="ma.nicafranzceckronsuarez@student.laverdad.edu.ph" target="blank">Group 1</a> )</b>
         </div>
       </footer>
     </div>
