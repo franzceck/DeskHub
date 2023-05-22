@@ -62,20 +62,20 @@ p {
 }
 
 .faq-title {
-  color: #226acc;
+  color: #1b1b1b;
   font-size: 2em;
   margin: 0.4em 0;
 }
 
 div.seperator {
   width: 7.5em;
-  background-color: #226acc;
+  background-color: #FDC474;
   height: 0.17em;
   margin-left: -1.8em;
 }
 
 .faq-list > div {
-  border-bottom: 0.07em solid #226acc;
+  border-bottom: 0.07em solid #FDC474;
   padding: 1.5em 0em;
 }
 
@@ -104,7 +104,7 @@ summary {
 }
 
 summary:hover {
-  color: #226acc;
+  color: #FDC474;
 }
 
 details[open] summary ~ * {
@@ -123,11 +123,11 @@ details[open] summary ~ * {
 }
 
 details[open] summary {
-  color: #226acc;
+  color: #FDC474;
 }
 
 details[open] p {
-  border-left: 3px solid #226acc;
+  border-left: 3px solid #FDC474;
   margin-left: 55px;
   padding-left: 25px;
   opacity: 100;
@@ -141,10 +141,15 @@ details[open] summary:after {
   font-weight: 200;
 }
 
+
+.groundColor{
+  background-color:#ffff;
+}
+
 .faq-body {
-  position: relative;
-  left: 200px;
-  width: 60em;
+  display: flex;
+  flex-direction: row;
+  width: 40% 60%;
   /* margin: 4em auto; */
   border-radius: 0.5em;
   padding: 3em;
@@ -166,8 +171,8 @@ summary:after {
   background: transparent;
   border-radius: 0.3em;
   content: "+";
-  color: #226acc;
-  float: left;
+  color: #1b1b1b;
+  float: right;
   font-size: 1.8em;
   font-weight: bold;
   margin: -0.3em 0.65em 0 0;
@@ -182,7 +187,7 @@ summary:after {
 </head>
 
 <body>
-    <div>
+<div class="groundColor">
     <hr>
 
         <!-- <h1 class="supp-header">SUPPORT</h1>
@@ -191,71 +196,76 @@ summary:after {
         <div id="faq" class="faq-body">
             <div class="faq-header">
                 <h3 class="faq-title">FAQ's</h3>
-                <div class="seperator"></div>
+                <h5>Got a question? Fire away</h5>
+                <h7>Developed By: @LVCC_BSIS-3 Group#1  (2022-2023)</h7>
+                <br>
+                <h7>Contact Number: 09XXXXXXXXX </h7>
+                
             </div>
             <div class="faq-list">
                 <div>
-                    <details open>
-                        <summary title="How to add an event?">How to add an event?</summary>
-                        <p class="faq-content">Step 1: Go to the upcoming events page. <br>
-                            Step 2: Click the “add” button on the upper right of the table.<br>
-                            Step 3: Input the event’s details on the form.<br>
-                            Step 4: Lastly, click “save” to add the event on the list.
+                    <details >
+                        <summary title="How do I book a reservation?">How do I book a reservation?</summary>
+                        <p class="faq-content">Step 1: Got to the home page. <br>
+                            Step 2: Click Book Now and Register(If you Dont have an account).<br>
+                            Step 3: Back to LogIn page and signin the newly registered account.<br>
+                            Step 4: Go to List of Bookings.<br>Step 5: Click Create New for new set of bookings and save it.<br>Step 6: Wait for Approval of the Admin
                         </p>
                     </details>
                 </div>
                 <div>
                     <details>
-                        <summary title="Can I delete a scheduled event?">Can I delete a scheduled event?</summary>
-                        <p class="faq-content">Step 1: Go to the upcoming events page. <br>
-                            Step 2: Click the “delete” button parallel to the event you wish to remove.
-                        </p>
-                    </details>
-                </div>
-                <div>
-                    <details>
-                        <summary title="How to edit a scheduled event?">How to edit a scheduled event?</summary>
-                        <p class="faq-content">Step 1: Go to the scheduled events page. <br>
-                            Step 2: Click the “edit” button that corresponds to the event details you're going to edit. <br>
-                            Step 3: Edit the details on the form.<br>
+                        <summary title="How Far in Advance should I make a booking?">How Far in Advance should I make a booking?</summary>
+                        <p class="faq-content">Step 1: Sign In your account
+                           <br>
+                           Step 2: Go to List of Bookings
+                           <br>
+                           Step 3: Click Create New for new set of bookings.<br>
                             Step 4: Lastly, click “save” to update the event.
+                            <br>
+                            Step 4: Click Save to update the event.
                         </p>
                     </details>
                 </div>
                 <div>
                     <details>
-                        <summary title="How to change passwords?">How to change passwords?</summary>
-                        <p class="faq-content">Step 1: Go to the list of employee pages. <br>
-                            Step 2: Click the “change password” button that corresponds to employee’s detail. <br>
-                            Step 3: Change or set to default password. <br>
-                            Step 4: Lastly, click “save” to update the event.
+                        <summary title="Can I modify or cancel my booking after it has been made?">Can I modify or cancel my booking after it has been made?</summary>
+                        <p class="faq-content">Step 1: Go to the List of Bookings. 
+                          <br>
+                          Step 2: Click the “Action” button if you want to delete to create new bookings.
+                          <br>
+                          Step 3: Lastly, click “save” to update the event.
                         </p>
                     </details>
                 </div>
                 <div>
                     <details>
-                        <summary title="How to Edit bookings?">How to Edit bookings?</summary>
-                        <p class="faq-content">If someone have made a mistake in their bookings, you can follow this steps: <br>
-                            1st Step: Go to the Bookings Page by clicking the word ‘Bookings’ in the sidebar on the left. <br>
-                            2nd Step: on the Bookings Page, we can see two buttons on the right side of each tables, press the ‘Edit’ button of which table you want to edit. <br>
-                            3rd Step: Edit the Name, Desk No., Date and/or Reason of the table you had selected. <br>
-                            4th Step: Once you had rewrite the table, press the button ‘Edit’.<br>
-                            That is how you Edit the Bookings.
+                        <summary title="What is the cancellation policy?">What is the cancellation policy?</summary>
+                        <p class="faq-content">Step 1: Contact the Admin of the DeskHub System.
+                          <br>
+                          Step 2: Tell them to cancel your bookings <br>
+                          Step 3: Wait for cancel until your booking was removed.
                         </p>
                     </details>
                 </div>
+              
                 <div>
                     <details>
-                        <summary title="How to Delete an Entry in the Bookings?">How to Delete an Entry in the Bookings?</summary>
+                        <summary title="Can I delete scheduled desk booking?">Can I delete scheduled desk booking?</summary>
                         <p class="faq-content">To Delete an entry in the list follow this two easy steps: <br>
-                            1st Step: Go to the Bookings Page by clicking the word ‘Bookings’ in the sidebar on the left. <br>
-                            2nd Step: On the Bookings Page, we can see two buttons on the right side of each table, <br> press the ‘Delete’ button and that is how you Edit the Bookings.
+                        Step 1: Go to your Account
+                        <br>
+                        Step 2: Got to List Bookings <br> 
+                        Step 3: Click Action Button
+                        <br>
+                        Step 4: Click Delete
+                        <br>
+                        Step 5: Last save the event.
                         </p>
                     </details>
                 </div>
             </div>
         </div>
-
     </div>
     <!-- </div> -->
 
@@ -282,7 +292,8 @@ summary:after {
             display: flex;
             justify-content: center;
             width: 100%;
-            margin-top: 5%;
+            margin-top: 15%;
+            margin-left: 10%;
             align-items: center;
             
         }
@@ -326,7 +337,7 @@ summary:after {
     <div id="contact" class="faq-body">
             <div class="faq-header">
             
-                <h3 class="faq-title contact-us-title"></i>Contact Us</h3>
+                <h3 class="contact-us-title"></i>Contact Us</h3>
                 <div class="seperator contact-separator"></div>
             </div>
     <form action="https://formspree.io/f/xvonzjja"  method="POST">

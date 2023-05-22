@@ -73,7 +73,7 @@
 
   .follow ul li:hover {
     text-decoration: underline;
-    color: #007bff;
+    color: #FDC474;
   }
 
   .follow ul {
