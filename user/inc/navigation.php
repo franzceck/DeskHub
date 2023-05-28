@@ -1,3 +1,7 @@
+<?php
+$role_id = $_SESSION['userdata']['role_id'];
+?>
+
 </style>
 <!-- Main Sidebar Container -->
       <aside class="main-sidebar sidebar-light-primary elevation-4 sidebar-no-expand">
@@ -40,7 +44,7 @@
                       </a>
                     </li>
                     <?php
-                    if ($_SESSION['userdata']['role_id'] == 2) {
+                    if ($role_id == 2 || $role_id == 3) {
                     ?>
                         <li class="nav-item dropdown">
                           <a href="./?page=schedule_settings" class="nav-link nav-schedule_settings">
@@ -50,6 +54,13 @@
                             </p>
                           </a>
                         </li>
+
+                        <?php } ?>                        
+                        
+                    
+                    <?php
+                    if ($role_id == 2) {
+                    ?>
                         <li class="nav-item dropdown">
                           <a href="./?page=user/list" class="nav-link nav-user_list">
                             <i class="nav-icon fas fa-users"></i>
@@ -58,6 +69,7 @@
                             </p>
                           </a>
                         </li>
+                        
                         <li class="nav-item dropdown">
                           <a href="./?page=system_info" class="nav-link nav-system_info">
                             <i class="nav-icon fas fa-cogs"></i>
