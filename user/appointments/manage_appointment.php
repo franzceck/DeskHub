@@ -52,7 +52,7 @@ if (isset($_GET['id']) && $_GET['id'] > 0) {
                 </div>
             </div> -->
             <div>
-                <?php if ($_SESSION['userdata']['role_id'] == 2) { ?>
+                <?php if ($_SESSION['userdata']['role_id'] == 2 || $_SESSION['userdata']['role_id'] == 3) { ?>
                     <div class="form-group">
                         <label for="client_id">User</label>
                         <select name="client_id" id="client_id" class="custom custom-select">
@@ -72,7 +72,7 @@ if (isset($_GET['id']) && $_GET['id'] > 0) {
                     <label for="date_sched" class="control-label">Booking Schedule</label>
                     <input type="datetime-local" class="form-control" name="date_sched" value="<?php echo isset($user['date_sched']) ? date("Y-m-d\TH:i", strtotime($user['date_sched'])) : "" ?>" required>
                 </div>
-                <?php if ($_settings->userdata('role_id') == 2) : ?>
+                <?php if ($_settings->userdata('role_id') == 2 || $_settings->userdata('role_id') == 3) : ?>
                     <div class="form-group">
                         <label for="status" class="control-label">Status</label>
                         <select name="status" id="status" class="custom custom-select">

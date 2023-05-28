@@ -99,7 +99,7 @@
               </div>
             </div>
           </div>
-          <!-- <span style="font-size:10px; color: #03989e;">CONTACT NO.</span>
+          <span style="font-size:10px; color: #03989e;">CONTACT NO.</span>
           <div class="input-group mb-3">
             <input type="text" class="form-control" name="contact" placeholder="" required>
             <div class="input-group-append">
@@ -107,8 +107,8 @@
                 <span class="fas fa-user"></span>
               </div>
             </div>
-          </div> -->
-          <!-- <span style="font-size:10px; color: #03989e;">ADDRESS</span>
+          </div>
+          <span style="font-size:10px; color: #03989e;">ADDRESS</span>
           <div class="input-group mb-3">
             <input type="text" class="form-control" name="address" placeholder="" required>
             <div class="input-group-append">
@@ -116,7 +116,7 @@
                 <span class="fas fa-user"></span>
               </div>
             </div>
-          </div> -->
+          </div>
           <div class="row">
 
             <!-- /.col -->

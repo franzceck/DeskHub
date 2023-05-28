@@ -49,6 +49,10 @@ END;
 if ($_SESSION['userdata']['role_id'] != 2) {
     $stmt .= " WHERE a.client_id = {$_SESSION['userdata']['id']}";
 }
+// if ($_SESSION['userdata']['role_id'] != 3) {
+//     $stmt .= " WHERE a.client_id = {$_SESSION['userdata']['id']}";
+// }
+
 $sched_query = $conn->query($stmt);
 $sched_arr = $sched_query->fetch_all(MYSQLI_ASSOC);
 

@@ -70,7 +70,7 @@
 
   .follow ul li:hover {
     text-decoration: underline;
-    color: #007bff;
+    color: #FDC474;
   }
 
   .follow ul {
@@ -134,7 +134,7 @@
 
       <ul>
         <li>About Us</li>
-        <li>Adress</li>
+        <li>Address</li>
         <li>Email</li>
 
       </ul>
