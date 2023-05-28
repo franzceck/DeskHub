@@ -46,7 +46,7 @@ SELECT
     u.name
 FROM `appointments` a inner join `users` u on a.client_id = u.id
 END;
-if ($_SESSION['userdata']['role_id'] != 2) {
+if ($_SESSION['userdata']['role_id'] != 2 && $_SESSION['userdata']['role_id'] != 3) {
     $stmt .= " WHERE a.client_id = {$_SESSION['userdata']['id']}";
 }
 // if ($_SESSION['userdata']['role_id'] != 3) {
