@@ -101,7 +101,7 @@ details[open] summary ~ * {
 }
 
 details[open] summary {
-  color: #226acc;
+  color: #FDC474;
 }
 
 details[open] p {

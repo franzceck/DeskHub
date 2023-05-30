@@ -63,6 +63,7 @@
   .Footnew {
     display: flex;
     flex-direction: row;
+    
   }
 
   .follow {
@@ -73,7 +74,7 @@
 
   .follow ul li:hover {
     text-decoration: underline;
-    color: #007bff;
+    color: #FDC474;
   }
 
   .follow ul {
@@ -94,6 +95,15 @@
     text-decoration: underline;
     color: #FDC474;
   }
+
+  a {
+    color: #FDC474;
+  }
+
+  a:hover {
+    color: #FDC474;
+  }
+
 </style>
 <footer class="py-5 bg-dark">
   <div class="container Footnew">
@@ -103,9 +113,9 @@
     </div>
 
     <div class="follow">
-      <ul>
+      <ul >
         <li class="last"> Follow Us</li>
-        <li>
+        <li >
           <a href="https://www.facebook.com/" target="_blank">
             <img src=".//socials/facebook.png" alt="" />Facebook</a>
         </li>
@@ -125,7 +135,7 @@
 
       <ul>
         <li>About Us</li>
-        <li>Adress</li>
+        <li>Address</li>
         <li>Email</li>
 
       </ul>

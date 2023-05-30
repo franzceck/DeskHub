@@ -61,7 +61,7 @@
 				<tbody>
 					<?php
 					$i = 1;
-					if ($_settings->userdata('role_id') == 2) {
+					if ($_settings->userdata('role_id') == 2 || $_settings->userdata('role_id') == 3) {
 						$qry = $conn->query("SELECT p.*,a.date_sched,a.status,a.id as aid from `users` p inner join `appointments` a on p.id = a.client_id  order by unix_timestamp(a.date_sched) desc ");
 					} else {
 						$qry = $conn->query("SELECT p.*,a.date_sched,a.status,a.id as aid from `users` p inner join `appointments` a on p.id = a.client_id where p.id = {$_settings->userdata('id')} order by unix_timestamp(a.date_sched) desc ");
@@ -102,7 +102,7 @@
 								</button>
 								<div class="dropdown-menu" role="menu">
 									<a class="dropdown-item view_data" href="javascript:void(0)" data-id="<?php echo $row['aid'] ?>"> View</a>
-									<?php if ($_SESSION['userdata']['role_id'] == 2) { ?>
+									<?php if ($_SESSION['userdata']['role_id'] == 2 || $_SESSION['userdata']['role_id'] == 3) { ?>
 										<div class="divider"></div>
 										<a class="dropdown-item edit_data" href="javascript:void(0)" data-id="<?php echo $row['aid'] ?>"> Edit</a>
 										<div class="divider"></div>

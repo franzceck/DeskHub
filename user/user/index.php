@@ -16,16 +16,16 @@ foreach($user->fetch_array() as $k =>$v){
 			<form action="" id="manage-user">	
 				<input type="hidden" name="id" value="<?php echo $_settings->userdata('id') ?>">
 				<div class="form-group">
-					<label for="name">Full Name</label>
+					<label for="name">First Name</label>
 					<input type="text" name="firstname" id="firstname" class="form-control" value="<?php echo isset($meta['firstname']) ? $meta['firstname']: '' ?>" required>
 				</div>
 				<div class="form-group">
-					<label for="name">Role / Position</label>
+					<label for="name">Last Name</label>
 					<input type="text" name="lastname" id="lastname" class="form-control" value="<?php echo isset($meta['lastname']) ? $meta['lastname']: '' ?>" required>
 				</div>
 				<div class="form-group">
-					<label for="username">Username</label>
-					<input type="text" name="username" id="username" class="form-control" value="<?php echo isset($meta['username']) ? $meta['username']: '' ?>" required  autocomplete="off">
+				    <label for="email">Email</label>
+					<input type="text" name="email" id="email" class="form-control" value="<?php echo isset($meta['email']) ? $meta['email']: '' ?>"  autocomplete="off">
 				</div>
 				<div class="form-group">
 					<label for="password">Password</label>
