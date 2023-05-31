@@ -99,18 +99,18 @@
               </div>
             </div>
           </div>
-          <span style="font-size:10px; color: #03989e;">CONTACT NO.</span>
+          <!-- <span style="font-size:10px; color: #03989e;">CONTACT NO.</span> -->
           <div class="input-group mb-3">
-            <input type="text" class="form-control" name="contact" placeholder="" required>
+            <input type="text" class="form-control" name="contact" placeholder="Contact No." required>
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-user"></span>
               </div>
             </div>
           </div>
-          <span style="font-size:10px; color: #03989e;">ADDRESS</span>
+          <!-- <span style="font-size:10px; color: #03989e;">ADDRESS</span> -->
           <div class="input-group mb-3">
-            <input type="text" class="form-control" name="address" placeholder="" required>
+            <input type="text" class="form-control" name="address" placeholder="Home Address" required>
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-user"></span>
@@ -125,9 +125,9 @@
             </div>
             <!-- /.col -->
           </div>
-          <p class="login-box-msg">Already have an account? <a href="login.php">Login</a> instead.</p>
+          <p class="login-box-msg">Already have an account? <a style="color: #FF914D; font-weight: 600; " href="login.php">Login</a> instead.</p>
           <div class="col-8">
-            <a href="<?php echo base_url ?>">Go to Homepage</a>
+            <a style="color: #FF914D; font-weight: 600; text-decoration: underline;" href="<?php echo base_url ?>">Go to Homepage</a>
           </div>
         </form>
         <!-- /.social-auth-links -->

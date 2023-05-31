@@ -5,24 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-    <style>
-        .CONTAIN{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        .FP{
-            width: 100vh;
-            height: 70vh;
-            opacity: 100%;
-        }
-    </style>
+    
 </head>
 <body>
-    <div class="CONTAIN">
-        <h1>FloorPlan</h1>
-         <img src="../dist/img/floorplan.png" alt="" srcset="" class="FP">
+    <div class="col-lg-12">
+        <div class="card card-outline card-primary">
+            <div class="card-header">
+                <h5 class="card-title" >Floor Plan Overview</h5>
+            </div>    
+                <div class="card-body">
+                   <img style="width: 100%; height: 400px" src="../dist/img/floorplan.png" alt="" srcset="" class="FP">
+                </div>            
+        </div>
+        
     </div>
 </body>
 </html>

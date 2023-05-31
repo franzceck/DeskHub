@@ -78,9 +78,9 @@
             </div>
             <!-- /.col -->
           </div>
-          <p class="login-box-msg">Don't have an account yet? <a href="register.php">Register</a></p>
+          <p class="login-box-msg">Don't have an account yet? <a style="color: #FF914D; font-weight: 600; " href="register.php">Register</a></p>
           <div class="col-8 ">
-            <a href="<?php echo base_url ?>">Go to Homepage</a>
+            <a style="color: #FF914D; font-weight: 600; text-decoration: underline;" href="<?php echo base_url ?>">Go to Homepage</a>
           </div>
         </form>
         <!-- /.social-auth-links -->

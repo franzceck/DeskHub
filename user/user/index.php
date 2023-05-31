@@ -3,6 +3,7 @@ $user = $conn->query("SELECT * FROM users where id ='".$_settings->userdata('id'
 foreach($user->fetch_array() as $k =>$v){
 	$meta[$k] = $v;
 }
+
 ?>
 <?php if($_settings->chk_flashdata('success')): ?>
 <script>
@@ -23,10 +24,22 @@ foreach($user->fetch_array() as $k =>$v){
 					<label for="name">Last Name</label>
 					<input type="text" name="lastname" id="lastname" class="form-control" value="<?php echo isset($meta['lastname']) ? $meta['lastname']: '' ?>" required>
 				</div>
+
 				<div class="form-group">
 				    <label for="email">Email</label>
 					<input type="text" name="email" id="email" class="form-control" value="<?php echo isset($meta['email']) ? $meta['email']: '' ?>"  autocomplete="off">
 				</div>
+
+				<div class="form-group">
+					<label for="name">Contact No.</label>
+					<input type="text" name="contact" id="contact" class="form-control" value="<?php echo isset($meta['contact']) ? $meta['contact']: '' ?>" required>
+				</div>
+
+				<div class="form-group">
+					<label for="name">Home Address</label>
+					<input type="text" name="address" id="address" class="form-control" value="<?php echo isset($meta['address']) ? $meta['address']: '' ?>" required>
+				</div>
+
 				<div class="form-group">
 					<label for="password">Password</label>
 					<input type="password" name="password" id="password" class="form-control" value="" autocomplete="off">

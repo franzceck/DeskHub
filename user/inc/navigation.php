@@ -39,7 +39,7 @@ $role_id = $_SESSION['userdata']['role_id'];
                       <a href="./?page=appointments" class="nav-link nav-appointments">
                         <i class="nav-icon fas fa-calendar"></i>
                         <p style="font-size: 20px; font-weight:600;color: #B67A0E;">
-                          List of Bookings
+                          Add Booking
                         </p>
                       </a>
                     </li>
@@ -65,7 +65,7 @@ $role_id = $_SESSION['userdata']['role_id'];
                           <a href="./?page=user/list" class="nav-link nav-user_list">
                             <i class="nav-icon fas fa-users"></i>
                             <p style="font-size: 20px; font-weight:600;color: #B67A0E;">
-                              User List
+                              Manage User
                             </p>
                           </a>
                         </li>
@@ -74,7 +74,7 @@ $role_id = $_SESSION['userdata']['role_id'];
                           <a href="./?page=system_info" class="nav-link nav-system_info">
                             <i class="nav-icon fas fa-cogs"></i>
                             <p style="font-size: 20px;  font-weight:600;color: #B67A0E;">
-                              Settings
+                              System Settings
                             </p>
                           </a>
                         </li>
@@ -91,7 +91,7 @@ $role_id = $_SESSION['userdata']['role_id'];
                       <a href="./?page=user/Support" class="nav-link nav-user_support">
                         <i class="nav-icon fas fa-info"></i>
                         <p style="font-size: 20px; font-weight:600;color: #B67A0E;">
-                          Support
+                          FAQ's
                         </p>
                       </a>
                     </li>

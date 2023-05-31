@@ -197,9 +197,9 @@ summary:after {
             <div class="faq-header">
                 <h3 class="faq-title">FAQ's</h3>
                 <h5>Got a question? Fire away</h5>
-                <h7>Developed By: @LVCC_BSIS-3 Group#1  (2022-2023)</h7>
+                <h7>Developed By: Group 1 (2022-2023)</h7>
                 <br>
-                <h7>Contact Number: 09XXXXXXXXX </h7>
+                <h7>Contact Number: 0963-809-4560 </h7>
                 
             </div>
             <div class="faq-list">
@@ -209,16 +209,16 @@ summary:after {
                         <p class="faq-content">Step 1: Got to the home page. <br>
                             Step 2: Click Book Now and Register(If you Dont have an account).<br>
                             Step 3: Back to LogIn page and signin the newly registered account.<br>
-                            Step 4: Go to List of Bookings.<br>Step 5: Click Create New for new set of bookings and save it.<br>Step 6: Wait for Approval of the Admin
+                            Step 4: Go to Add Booking.<br>Step 5: Click Create New for new set of bookings and save it.<br>Step 6: Wait for Approval of the Admin.
                         </p>
                     </details>
                 </div>
                 <div>
                     <details>
                         <summary title="How Far in Advance should I make a booking?">How Far in Advance should I make a booking?</summary>
-                        <p class="faq-content">Step 1: Sign In your account
+                        <p class="faq-content">Step 1: Sign In your account.
                            <br>
-                           Step 2: Go to List of Bookings
+                           Step 2: Go to Add Booking.
                            <br>
                            Step 3: Click Create New for new set of bookings.<br>
                             Step 4: Lastly, click “save” to update the event.
@@ -230,7 +230,7 @@ summary:after {
                 <div>
                     <details>
                         <summary title="Can I modify or cancel my booking after it has been made?">Can I modify or cancel my booking after it has been made?</summary>
-                        <p class="faq-content">Step 1: Go to the List of Bookings. 
+                        <p class="faq-content">Step 1: Go to the Add Booking.
                           <br>
                           Step 2: Click the “Action” button if you want to delete to create new bookings.
                           <br>
@@ -243,7 +243,7 @@ summary:after {
                         <summary title="What is the cancellation policy?">What is the cancellation policy?</summary>
                         <p class="faq-content">Step 1: Contact the Admin of the DeskHub System.
                           <br>
-                          Step 2: Tell them to cancel your bookings <br>
+                          Step 2: Tell them to cancel your bookings. <br>
                           Step 3: Wait for cancel until your booking was removed.
                         </p>
                     </details>
@@ -252,13 +252,13 @@ summary:after {
                 <div>
                     <details>
                         <summary title="Can I delete scheduled desk booking?">Can I delete scheduled desk booking?</summary>
-                        <p class="faq-content">To Delete an entry in the list follow this two easy steps: <br>
-                        Step 1: Go to your Account
+                        <p class="faq-content"> <br>
+                        Step 1: Go to your Account.
                         <br>
-                        Step 2: Got to List Bookings <br> 
-                        Step 3: Click Action Button
+                        Step 2: Got to Add Booking. <br> 
+                        Step 3: Click Action Button.
                         <br>
-                        Step 4: Click Delete
+                        Step 4: Click Delete.
                         <br>
                         Step 5: Last save the event.
                         </p>
