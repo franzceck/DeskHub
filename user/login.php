@@ -31,7 +31,14 @@
       margin-bottom: 20px;
       
     }
-    
+    a{
+      color: #0079FF ;
+    }
+    .col-8{
+      justify-content: center;
+      text-align: center;
+      margin-left: 50px;
+    }
   </style>
 </head>
 
