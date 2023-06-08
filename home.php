@@ -4,11 +4,11 @@
  <header class="bg-light py-5" id="main-header">
     <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">
-            <h1 class="display-4 fw-bolder"><?php echo $_settings->info('name') ?></h1>
+            <h1 style="margin-top: 90px;" class="display-4 fw-bolder"><?php echo $_settings->info('name') ?></h1>
             <p class="lead fw-normal text-white-50 mb-0">
 
             <!-- HOMEPAGE BUTTON -->
-                <a class="btn btn-lg btn-primary" type="button" id="create_appointment" href="user/register.php">Book Now !</a>
+                <a style="width: 300px; border-radius: 25px; border-color: #FF914D; margin-top: 80px; font-weight: bold;" class="btn btn-lg btn-primary" type="button" id="create_appointment" href="user/register.php">Book Now</a>
             </p>
         </div>
     </div>
@@ -188,7 +188,7 @@ summary:after {
 
 <body>
 <div class="groundColor">
-    <hr>
+    
 
         <!-- <h1 class="supp-header">SUPPORT</h1>
         <h5 class="supp-subhead">How can we help you?</h5> -->
@@ -291,9 +291,9 @@ summary:after {
         .center{
             display: flex;
             justify-content: center;
-            width: 100%;
+            width: 910px;
             margin-top: 15%;
-            margin-left: 10%;
+            /* margin-left: 10%; */
             align-items: center;
             
         }
@@ -313,13 +313,15 @@ summary:after {
           border-width: 0px;
           padding: 10px;
           margin-left:-15px;
-          width: 48rem;
-          font-weight: bold;
+          width: 815px;
+          font-size: 18px;
+          margin-top: 25px;
           
         }
         .contact-btn:hover {
           background-image: linear-gradient(to right, #FF914D 27%, #FFDE59 100% );
-          color: black;
+          /* color: black; */
+          font-weight: bold;
         }
         .contact-us-title {
           color: black;
@@ -340,26 +342,26 @@ summary:after {
                 <h3 class="contact-us-title"></i>Contact Us</h3>
                 <div class="seperator contact-separator"></div>
             </div>
-    <form action="https://formspree.io/f/xvonzjja"  method="POST">
+    <form action="https://formspree.io/f/myyaqeqe"  method="POST">
         <div class="center">
         <div class="style">
             <div class="row">
                 <div class="col">
-                <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                <label for="exampleFormControlInput1" class="form-label"></label>
                     <input type="text" class="form-control" name="Name" placeholder="First Name" aria-label="First name" required>
                 </div>
                 <div class="col">
-                <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                <label for="exampleFormControlInput1" class="form-label"></label>
                     <input type="text" class="form-control" name="Lastname"  placeholder="Last Name" aria-label="Last name" required style="margin-bottom: 7px;">
                 </div>
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+                <label for="exampleFormControlInput1" class="form-label"></label>
                 <input type="email" name="Email" class="form-control" id="exampleFormControlInput1" placeholder="me@gmail.com" required>
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                <textarea class="form-control" name="Comments" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                <label for="exampleFormControlTextarea1" class="form-label"></label>
+                <textarea placeholder="Type your message here..." class="form-control" name="Comments" id="exampleFormControlTextarea1" rows="3" required></textarea>
             </div>
             <div class="col-12">
                 <button class="btn btn-primary contact-btn" name="FormSubmit" type="submit">Submit</button>
@@ -369,7 +371,7 @@ summary:after {
     </form>
 
     </div>
-<hr>
+<
 
 </body>
 </html>
