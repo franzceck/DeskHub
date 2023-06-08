@@ -100,7 +100,7 @@
   <div class=" Footnew">
     <div class="FootOver">
     <div class="float-right d-none d-sm-inline-block">
-      <b><?php echo $_settings->info('short_name') ?> (by: <a href="ma.nicafranzceckronsuarez@student.laverdad.edu.ph" target="blank">Group 1</a> )</b>
+      <b><?php echo $_settings->info('short_name') ?> (by: <a href="ma.nicafranzceckronsuarez@student.laverdad.edu.ph" target="blank">Group 1</a>)</b>
     </div>
     <div>
     <strong>Copyright © <?php echo date('Y') ?>.

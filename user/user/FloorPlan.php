@@ -14,7 +14,7 @@
                 <h5 class="card-title" >Floor Plan Overview</h5>
             </div>    
                 <div class="card-body">
-                   <img style="width: 100%; height: 400px" src="../dist/img/floorplan.png" alt="" srcset="" class="FP">
+                   <img style="width: 100%; height: 700px" src="../dist/img/Floor Plan.png" alt="" srcset="" class="FP">
                 </div>            
         </div>
         

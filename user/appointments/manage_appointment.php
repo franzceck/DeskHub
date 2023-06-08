@@ -85,7 +85,8 @@ if (isset($_GET['id']) && $_GET['id'] > 0) {
                     <input type="hidden" name="status" value="0">
                 <?php endif; ?>
             </div>
-            <div class="form-group d-flex justify-content-end w-100 form-group">
+
+            <div  class="form-group d-flex justify-content-end w-100 form-group">
                 <button class="btn-primary btn">Submit Book</button>
                 <button class="btn-light btn ml-2" type="button" data-dismiss="modal">Cancel</button>
             </div>
