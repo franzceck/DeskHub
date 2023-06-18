@@ -167,7 +167,7 @@ $sched_json = json_encode($sched_arr);
             eventClick: (info) => {
                 if (info.event.id == 'slots')
                     return;
-                uni_modal("Appointment Details", "appointments/view_details.php?id=" + info.event.id)
+                uni_modal("Booking Details", "appointments/view_details.php?id=" + info.event.id)
             },
             eventClassNames: (info) => {
                 if (info.event.id == 'slots') {
