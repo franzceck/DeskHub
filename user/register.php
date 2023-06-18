@@ -59,7 +59,7 @@
         <p href="" class="h1" style="font-size:30px;"><b>Register</b></p>
       </div>
       <img src="../dist/img/Deskhub (new logo).png" alt="" srcset="" style="height: 70px; width:70px; margin-left: 40%; ">
-      <div class="card-body">
+      <div class="card-body" style="background-color: #FFE8C0;">
         <!-- <p class="login-box-msg">Welcome!</p> -->
 
         <form id="register-user-frm" action="" method="post">
