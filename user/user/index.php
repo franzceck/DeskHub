@@ -27,7 +27,7 @@ foreach($user->fetch_array() as $k =>$v){
 
 				<div class="form-group">
 				    <label for="email">Email</label>
-					<input type="text" name="email" id="email" class="form-control" value="<?php echo isset($meta['email']) ? $meta['email']: '' ?>"  autocomplete="off">
+					<input type="email" name="email" id="email" class="form-control" value="<?php echo isset($meta['email']) ? $meta['email']: '' ?>"  autocomplete="off">
 				</div>
 
 				<div class="form-group">
@@ -88,6 +88,12 @@ foreach($user->fetch_array() as $k =>$v){
 	$('#manage-user').submit(function(e){
 		e.preventDefault();
 var _this = $(this)
+var password = $('#password').val();
+        if (password.length < 8 && !$('#password').prop('disabled')) {
+            $('#msg').html('<div class="alert alert-danger">Password should be at least 8 characters long.</div>');
+            $("html, body").animate({ scrollTop: 0 }, "fast");
+            return;
+        }
 		start_loader()
 		$.ajax({
 			url:_base_url_+'classes/Users.php?f=save',
