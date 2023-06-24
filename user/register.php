@@ -83,7 +83,7 @@
           </div>
           <!-- <span style="font-size:10px; color: #03989e;">EMAIL</span> -->
           <div class="input-group mb-3">
-            <input type="text" class="form-control" autofocus name="email" placeholder="Email" required>
+            <input type="email" class="form-control" autofocus name="email" placeholder="Email" required>
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-user"></span>

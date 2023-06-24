@@ -10523,8 +10523,9 @@ button.bg-dark:focus {
 
 .font-weight-bolder {
   font-weight: bolder !important;
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Poppins', monospace;
+  
 }
 
 .font-italic {
