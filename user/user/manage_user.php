@@ -40,7 +40,7 @@ $roles = $result->fetch_all(MYSQLI_ASSOC);
 				</div>
 				<div class="form-group col-6">
 					<label for="email">Email</label>
-					<input type="text" name="email" id="email" class="form-control" value="<?php echo isset($meta['email']) ? $meta['email']: '' ?>" required  autocomplete="off">
+					<input type="email" name="email" id="email" class="form-control" value="<?php echo isset($meta['email']) ? $meta['email']: '' ?>" required  autocomplete="off">
 				</div>
 				<div class="form-group col-6">
 					<label for="password">Password</label>
@@ -80,38 +80,44 @@ $roles = $result->fetch_all(MYSQLI_ASSOC);
 	}
 </style>
 <script>
-	function displayImg(input,_this) {
-	    if (input.files && input.files[0]) {
-	        var reader = new FileReader();
-	        reader.onload = function (e) {
-	        	$('#cimg').attr('src', e.target.result);
-	        }
+    function displayImg(input, _this) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#cimg').attr('src', e.target.result);
+            }
 
-	        reader.readAsDataURL(input.files[0]);
-	    }
-	}
-	$('#manage-user').submit(function(e){
-		e.preventDefault();
-var _this = $(this)
-		start_loader()
-		$.ajax({
-			url:_base_url_+'classes/Users.php?f=save',
-			data: new FormData($(this)[0]),
-		    cache: false,
-		    contentType: false,
-		    processData: false,
-		    method: 'POST',
-		    type: 'POST',
-			success:function(resp){
-				if(resp ==1){
-					location.href = './?page=user/list';
-				}else{
-					$('#msg').html('<div class="alert alert-danger">Email already exist</div>')
-					$("html, body").animate({ scrollTop: 0 }, "fast");
-				}
-                end_loader()
-			}
-		})
-	})
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
 
+    $('#manage-user').submit(function (e) {
+        e.preventDefault();
+        var _this = $(this);
+        var password = $('#password').val();
+        if (password.length < 8 && !$('#password').prop('disabled')) {
+            $('#msg').html('<div class="alert alert-danger">Password should be at least 8 characters long.</div>');
+            $("html, body").animate({ scrollTop: 0 }, "fast");
+            return;
+        }
+        start_loader();
+        $.ajax({
+            url: _base_url_ + 'classes/Users.php?f=save',
+            data: new FormData($(this)[0]),
+            cache: false,
+            contentType: false,
+            processData: false,
+            method: 'POST',
+            type: 'POST',
+            success: function (resp) {
+                if (resp == 1) {
+                    location.href = './?page=user/list';
+                } else {
+                    $('#msg').html('<div class="alert alert-danger">Email already exists</div>');
+                    $("html, body").animate({ scrollTop: 0 }, "fast");
+                }
+                end_loader();
+            }
+        });
+    });
 </script>
