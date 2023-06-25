@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2023 at 02:52 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.1.2
+-- Generation Time: May 28, 2023 at 09:03 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -33,7 +33,7 @@ CREATE TABLE `appointments` (
   `date_sched` datetime NOT NULL,
   `status` tinyint(1) NOT NULL DEFAULT 0,
   `date_created` datetime NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `appointments`
@@ -55,7 +55,7 @@ INSERT INTO `appointments` (`id`, `client_id`, `date_sched`, `status`, `date_cre
 (26, 7, '2023-02-16 08:50:00', 1, '2023-02-02 12:52:47'),
 (27, 7, '2023-02-09 08:08:00', 0, '2023-02-02 13:08:54'),
 (28, 7, '2023-02-09 10:08:00', 0, '2023-02-02 13:15:48'),
-(29, 6, '2023-02-14 09:43:00', 0, '2023-02-02 23:46:03'),
+(29, 6, '2023-02-14 09:43:00', 1, '2023-02-02 23:46:03'),
 (30, 6, '2023-02-16 08:51:00', 0, '2023-02-02 12:52:47'),
 (31, 6, '2023-02-09 08:08:00', 0, '2023-02-02 13:08:54'),
 (32, 6, '2023-02-09 10:08:00', 0, '2023-02-02 13:15:48'),
@@ -65,7 +65,9 @@ INSERT INTO `appointments` (`id`, `client_id`, `date_sched`, `status`, `date_cre
 (37, 1, '2023-02-16 10:33:00', 2, '2023-02-04 00:33:46'),
 (38, 7, '2023-02-16 09:41:00', 0, '2023-02-04 00:41:21'),
 (40, 8, '2023-03-17 08:00:00', 0, '2023-03-16 17:08:17'),
-(41, 9, '2023-03-17 09:00:00', 0, '2023-03-16 17:11:01');
+(41, 9, '2023-03-17 09:00:00', 0, '2023-03-16 17:11:01'),
+(42, 10, '2023-05-24 08:00:00', 0, '2023-05-22 19:49:27'),
+(43, 11, '2023-05-30 08:00:00', 0, '2023-05-28 12:27:08');
 
 -- --------------------------------------------------------
 
@@ -80,7 +82,7 @@ CREATE TABLE `location` (
   `max_a_day` int(5) NOT NULL,
   `date_created` datetime NOT NULL DEFAULT current_timestamp(),
   `date_updated` datetime DEFAULT NULL ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -91,7 +93,7 @@ CREATE TABLE `location` (
 CREATE TABLE `roles` (
   `id` int(11) NOT NULL,
   `role_desc` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `roles`
@@ -99,7 +101,8 @@ CREATE TABLE `roles` (
 
 INSERT INTO `roles` (`id`, `role_desc`) VALUES
 (1, 'User'),
-(2, 'Administrator');
+(2, 'Administrator'),
+(3, 'Desk-Manager');
 
 -- --------------------------------------------------------
 
@@ -111,17 +114,17 @@ CREATE TABLE `schedule_settings` (
   `meta_field` text NOT NULL,
   `meta_value` text NOT NULL,
   `date_create` datetime NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `schedule_settings`
 --
 
 INSERT INTO `schedule_settings` (`meta_field`, `meta_value`, `date_create`) VALUES
-('day_schedule', 'Monday,Tuesday,Wednesday,Thursday,Friday', '2023-01-24 23:56:52'),
-('morning_schedule', '08:00,11:00', '2023-01-24 23:56:52'),
-('afternoon_schedule', '13:00,16:00', '2023-01-24 23:56:52'),
-('max_bookings_per_day', '15', '2023-02-04 01:00:08');
+('day_schedule', 'Monday,Tuesday,Wednesday,Thursday,Friday', '2023-05-28 12:43:05'),
+('morning_schedule', '08:00,11:00', '2023-05-28 12:43:05'),
+('afternoon_schedule', '13:00,16:00', '2023-05-28 12:43:05'),
+('max_bookings_per_day', '35', '2023-05-28 12:43:05');
 
 -- --------------------------------------------------------
 
@@ -133,7 +136,7 @@ CREATE TABLE `system_info` (
   `id` int(30) NOT NULL,
   `meta_field` text NOT NULL,
   `meta_value` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `system_info`
@@ -142,7 +145,7 @@ CREATE TABLE `system_info` (
 INSERT INTO `system_info` (`id`, `meta_field`, `meta_value`) VALUES
 (1, 'name', '“Use time and space; grow slowly into your dreams, infinity will fill you with peace.”'),
 (6, 'short_name', 'DeskHub'),
-(11, 'logo', 'uploads/1674402720_1673696760_Untitled design (2).png'),
+(11, 'logo', 'uploads/1683183960_Deskhub (new logo).png'),
 (14, 'cover', 'uploads/1674151140_Background.png');
 
 -- --------------------------------------------------------
@@ -167,18 +170,18 @@ CREATE TABLE `users` (
   `type` tinyint(1) NOT NULL DEFAULT 0,
   `date_added` datetime NOT NULL DEFAULT current_timestamp(),
   `date_updated` datetime DEFAULT NULL ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `firstname`, `lastname`, `username`, `password`, `email`, `contact`, `address`, `role_id`, `avatar`, `last_login`, `type`, `date_added`, `date_updated`) VALUES
-(1, 'Franzceck', 'Suarez ADMIN ', 'franzceck', '0192023a7bbd73250516f069df18b500', 'franzceck@gmail.com', '', '', 2, 'uploads/1673712840_48426004_275596226435504_4592982329206505472_n.jpg', NULL, 1, '2021-01-20 14:02:37', '2023-02-03 02:20:58'),
+(1, 'Franzceck', 'Suarez (Admin)', 'franzceck', '0192023a7bbd73250516f069df18b500', 'franzceck@gmail.com', '', '', 2, 'uploads/1673712840_48426004_275596226435504_4592982329206505472_n.jpg', NULL, 1, '2021-01-20 14:02:37', '2023-05-29 01:44:09'),
 (6, 'Abraham', 'Suarez', 'abraham', '248706c023957db08d14f39749879207', '', '', '', 1, 'uploads/1673713140_1662549660201.jpg', NULL, 0, '2021-09-03 00:04:40', '2023-02-03 02:20:54'),
 (7, 'TestA', 'bc', 'test', '47bce5c74f589f4867dbd57e9ca9f808', 'aaa', 'a', 'a', 1, NULL, NULL, 0, '2023-02-03 01:49:53', '2023-02-03 14:55:01'),
-(8, 'Jessa', 'David', '', 'a5b85dcc021937f1fb0148939ede8cf3', 'jessa@gmail.com', '0923156489', 'Pampanga', 1, NULL, NULL, 0, '2023-03-16 17:03:13', NULL),
-(9, 'Tim', 'Bundalian', '', 'b15d47e99831ee63e3f47cf3d4478e9a', 'tim@gmail.com', '0923123456', 'Cavite', 1, NULL, NULL, 0, '2023-03-16 17:09:10', NULL);
+(10, 'Ma. Nica Franzceck Ron ', 'Suarez (Desk-Manager)', '', '6ad14ba9986e3615423dfca256d04e3f', 'nica@yahoo.com', '092212345678', 'Dasmariñas, Cavite', 3, 'uploads/1684755120_Franzceck Suarez.png', NULL, 0, '2023-05-11 09:00:36', '2023-05-23 14:06:34'),
+(11, 'Nica', 'Suarez (User)', '', 'efd398f9c21a334f1c3940de1862d5e8', 'franz@gmail.com', '092212345678', 'Bulihan', 1, NULL, NULL, 0, '2023-05-23 14:35:15', '2023-05-23 14:38:54');
 
 --
 -- Indexes for dumped tables
@@ -223,7 +226,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `appointments`
 --
 ALTER TABLE `appointments`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `location`
@@ -235,7 +238,7 @@ ALTER TABLE `location`
 -- AUTO_INCREMENT for table `roles`
 --
 ALTER TABLE `roles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `system_info`
@@ -247,7 +250,7 @@ ALTER TABLE `system_info`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
