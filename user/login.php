@@ -39,21 +39,21 @@
   <script>
     start_loader()
   </script>
-  <div class="login-box ">
+  <div class="login-box" >
     <!-- /.login-logo -->
-    <div class="card card-outline card-primary center-box">
+    <div class="card card-outline card-primary center-box" >
       <div class="card-header text-center">
         <p href="" class="h1" style="font-size:30px;"><b>Login</b></p>
       </div>
       <img src="../dist/img/Deskhub (new logo).png" alt="" srcset="" style="height: 70px; width:70px; margin-left: 40%; ">
-      <div class="card-body">
+      <div class="card-body" style="background-color: #FFE8C0;">
         <p class="login-box-msg">Welcome!</p>
 
         <form id="login-frm" action="" method="post">
           <!-- <span style="font-size:10px; color: #03989e;">EMAIL</span> -->
-          <div class="input-group mb-3">
+          <div class="input-group mb-3" style="background-color: red;">
             <input type="text" class="form-control" autofocus name="email" placeholder="Email"
-            style="font-size:15px; color: black;">
+            style="font-size:15px; color: black; ">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-user"></span>
@@ -78,9 +78,9 @@
             </div>
             <!-- /.col -->
           </div>
-          <p class="login-box-msg">Don't have an account yet? <a href="register.php">Register</a></p>
+          <p class="login-box-msg">Don't have an account yet? <a style="color: #FF914D; font-weight: 600; " href="register.php">Register</a></p>
           <div class="col-8 ">
-            <a href="<?php echo base_url ?>">Go to Homepage</a>
+            <a style="color: #FF914D; font-weight: 600; text-decoration: underline;" href="<?php echo base_url ?>">Go to Homepage</a>
           </div>
         </form>
         <!-- /.social-auth-links -->

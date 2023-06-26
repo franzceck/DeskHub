@@ -169,7 +169,7 @@ abbr[data-bs-original-title] {
 
 address {
     margin-bottom: 1rem;
-    font-style: normal;
+    font-style: 'Poppins';
     line-height: inherit;
 }
 
@@ -1357,6 +1357,7 @@ progress {
     .col-lg-12 {
         flex: 0 0 auto;
         width: 100%;
+
     }
     .offset-lg-0 {
         margin-left: 0;
@@ -4685,6 +4686,7 @@ fieldset:disabled .btn {
 
 .card-title {
     margin-bottom: 0.5rem;
+    
 }
 
 .card-subtitle {
@@ -7973,6 +7975,7 @@ fieldset:disabled .btn {
 
 .text-light {
     color: #f8f9fa !important;
+  
 }
 
 .text-dark {

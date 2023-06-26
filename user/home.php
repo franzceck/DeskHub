@@ -3,7 +3,6 @@
 $sched_arr = array();
 require_once('inc/sess_auth.php');
 ?>
-<hr>
 <div class="container">
     <div class="card">
         <div class="card-body">
@@ -49,9 +48,6 @@ END;
 if ($_SESSION['userdata']['role_id'] != 2 && $_SESSION['userdata']['role_id'] != 3) {
     $stmt .= " WHERE a.client_id = {$_SESSION['userdata']['id']}";
 }
-// if ($_SESSION['userdata']['role_id'] != 3) {
-//     $stmt .= " WHERE a.client_id = {$_SESSION['userdata']['id']}";
-// }
 
 $sched_query = $conn->query($stmt);
 $sched_arr = $sched_query->fetch_all(MYSQLI_ASSOC);
@@ -171,7 +167,7 @@ $sched_json = json_encode($sched_arr);
             eventClick: (info) => {
                 if (info.event.id == 'slots')
                     return;
-                uni_modal("Appointment Details", "appointments/view_details.php?id=" + info.event.id)
+                uni_modal("Booking Details", "appointments/view_details.php?id=" + info.event.id)
             },
             eventClassNames: (info) => {
                 if (info.event.id == 'slots') {

@@ -17,7 +17,7 @@
 	<div class="card-header">
 		<h3 class="card-title">List of System Users</h3>
 		<div class="card-tools">
-			<a href="?page=user/manage_user" class="btn btn-flat btn-primary"><span class="fas fa-plus"></span>  Create New</a>
+			<a href="?page=user/manage_user" class="btn btn-flat btn-primary"><span class="fas fa-plus"></span>  Add User</a>
 		</div>
 	</div>
 	<div class="card-body">
@@ -30,6 +30,7 @@
 						<th>Avatar</th>
 						<th>Name</th>
 						<th>Email</th>
+						<th>Status</th>
 						<th>Action</th>
 					</tr>
 				</thead>
@@ -44,6 +45,7 @@
 							<td class="text-center"><img src="<?php echo validate_image($row['avatar']) ?>" class="img-avatar img-thumbnail p-0 border-2" alt="user_avatar"></td>
 							<td><?php echo ucwords($row['name']) ?></td>
 							<td ><p class="m-0 truncate-1"><?php echo $row['email'] ?></p></td>
+							<td></td>
 							
 							<td align="center">
 								 <button type="button" class="btn btn-flat btn-default btn-sm dropdown-toggle dropdown-icon" data-toggle="dropdown">
