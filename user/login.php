@@ -52,7 +52,7 @@
         <form id="login-frm" action="" method="post">
           <!-- <span style="font-size:10px; color: #03989e;">EMAIL</span> -->
           <div class="input-group mb-3" style="background-color: red;">
-            <input type="text" class="form-control" autofocus name="email" placeholder="Email"
+            <input type="email" class="form-control" autofocus name="email" placeholder="Email"
             style="font-size:15px; color: black; ">
             <div class="input-group-append">
               <div class="input-group-text">
